@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Blocker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 14px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .block {
+            background-color: #d9534f;
+            color: white;
+        }
+        .whitelist {
+            background-color: #5bc0de;
+            color: white;
+        }
+        .status {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h2>Phishing Blocker</h2>
+    <p>Manage your phishing protection settings.</p>
+    <button class="block" id="blockSite">Block This Site</button>
+    <button class="whitelist" id="whitelistSite">Whitelist This Site</button>
+    <p class="status" id="statusMessage"></p>
+    <script src="js/popup.js"></script>
+
+    <button id="testCheck">Check Safe Browsing API</button>
+
+</body>
+</html>
+
+

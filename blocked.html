@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warning: Phishing Detected</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffcccc;
+            padding: 50px;
+        }
+        .warning {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .buttons {
+            margin-top: 30px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .proceed {
+            background-color: #f0ad4e;
+        }
+        .exit {
+            background-color: #d9534f;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="warning">⚠️ Warning: Phishing Website Detected! ⚠️</div>
+    <div class="message">This site has been identified as a potential phishing website. Proceed at your own risk.</div>
+    <div class="buttons">
+        <button class="button exit" onclick="window.close()">Exit</button>
+        <button class="button proceed" onclick="window.location.href='https://google.com'">Proceed at Your Own Risk</button>
+    </div>
+</body>
+</html>
